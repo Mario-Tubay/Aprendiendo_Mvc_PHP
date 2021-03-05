@@ -1,14 +1,11 @@
-
-body{
-
-    margin:1%;
+body {
+    margin: 1%;
     font-size: 150%;
     padding: 1px;
     padding-bottom: 10px;
-
 }
 
-header{
+header {
     background-image: url(Food-Delivery.jpg);
     text-align: center;
     padding-bottom: 15px;
@@ -16,44 +13,38 @@ header{
     height: 175px;
 }
 
-h1{
+h1 {
     color: #ffffff;
     background-color: black;
 }
 
-nav{
+nav {
     font-variant: small-caps;
     font-family: Arial, "Times New Roman", serif;
     font-size: 100%;
 }
 
-
-
-section{
-
-    float:left;
-    width:20%;
-    height:800px;
-    display:block;
+section {
+    float: left;
+    width: 20%;
+    height: 550px;
+    display: block;
     background: rgb(20, 62, 124);
-
-
 }
 
-
-
-img{
+img {
     width: 200px;
     height: auto;
     align-items: center;
-    margin-left : 10%;
+    margin-left: 10%;
     margin-top: 15%;
-    border:black 2px solid;
+    border: black 2px solid;
 }
-.aa{
+
+.aa {
     display: inline-block;
     font-weight: bold;
-    color:black;
+    color: black;
     text-align: center;
     background: white;
     width: 200px;
@@ -61,84 +52,100 @@ img{
     text-decoration: none;
     opacity: 0.5;
     border-radius: 10px;
-    margin-left : 4%;
+    margin-left: 4%;
     margin-right: 4%;
 }
-a:hover{
+
+a:hover {
     background: white;
-    color:black;
+    color: black;
     opacity: 1;
     border-radius: 10px;
 }
-.coso{
-    float:left;
-    width:80%;
-    height:800px;
-    display:block;
+
+.coso {
+    float: left;
+    width: 80%;
+    height: 550px;
+    display: block;
     background: white;
 }
-div{
+
+div {
     padding-left: 10px;
 }
-table{
 
+table {
     border-spacing: 05;
     border: 3px solid white;
     margin-left: 10%;
     width: 80%;
 }
-th{
-    color:white;
+
+th {
+    color: white;
     border: 1px solid greenyellow;
     height: 50px;
     background: #688438;
-    border-radius:  7px 7px 0 0;
+    border-radius: 7px 7px 0 0;
     font-size: 75%;
     padding: 1px;
 }
-th:first-child,td:first-child{
+
+th:first-child,
+td:first-child {
     text-align: left;
-    padding-left:  10px;
+    padding-left: 10px;
 }
-tr:hover{
-      opacity: 0.8;
- }
-tr:nth-child(n){
+
+tr:hover {
+    opacity: 0.8;
+}
+
+tr:nth-child(n) {
     text-align: center;
 }
-td{
-    color:black;
+
+td {
+    color: black;
     border: 1px solid white;
     height: 50px;
     background: #ceec92;
 }
-.letrasmayusculas{
+
+.letrasmayusculas {
     text-transform: uppercase;
 }
-footer{
+
+footer {
     background-color: #666960;
     text-align: center;
     margin-top: 50%;
-
     padding-top: 15%;
     padding-bottom: 5%;
     color: #ffffff;
 }
-.aa{
 
+.aa {
     display: inline-block;
-font-weight: bold;
-color:black;
-text-align: center;
-background: white;
-width: auto;
-padding: 1px;
-text-decoration: none;
-opacity: 0.5;
-border-radius: 10px;
-margin-left : 3%;
-margin-right: 3%;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    background: white;
+    width: auto;
+    padding: 1px;
+    text-decoration: none;
+    opacity: 0.5;
+    border-radius: 10px;
+    margin-left: 3%;
+    margin-right: 3%;
 }
-h3{
+
+h3 {
     color: #ffffff;
+}
+
+.contenedor {
+    max-width: 80%;
+    margin: 0 auto;
 }

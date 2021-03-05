@@ -11,7 +11,7 @@
 
         <section class="coso">
             <div >
-              <form class="" action="controllador/formularioController.php?accion=insert" method="post">
+              <form class="" action="index.php?m=insert" method="post">
                 <p>Nombre: <input type="text" name="nombre" size="40"></p>
                 <p>Identificacion: <input type="text" name="cedula" size="40"></p>
                 <p>Correo: <input type="text" name="correo" size="40"></p>
@@ -35,13 +35,18 @@
             <th>Nombre</th>
             <th>Telefono</th>
             <th>Correo</th>
+            <th>Accion</th>
           </tr>
-          <?php foreach ($matrizCliente as $value) {?>
+          <?php foreach ($datos as $value) {?>
             <tr>
                 <td><?php echo $value["cedula"]; ?></td>
                 <td><?php echo $value["nombre"]; ?></td>
                 <td><?php echo $value["telefono"]; ?></td>
                 <td><?php echo $value["correo"]; ?></td>
+                <td>
+                  <a href="index.php?m=editar&id=<?php echo $value["cedula"];?>"><i class="far fa-edit"></i></a>
+                  <a href="index.php?m=delete&id=<?php echo $value["cedula"];?>"><i class="far fa-trash-alt"></i></a>
+                </td>
             </tr>
           <?php } ?>
 

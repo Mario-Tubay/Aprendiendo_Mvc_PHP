@@ -21,14 +21,42 @@ class cliente_modelo
        }
        return  $this->cliente;
     }
-    public function insertar($tabla, $datos){
-     $consulta="insert into ".$tabla." values(null,". $data .")";
-     $resultado=$this->db->query($consulta);
-     if ($resultado) {
-         return true;
-     }else {
-         return false;
-     }
-  }
+    public function getClientesxID($id)
+    {
+       $query="SELECT * from cliente WHERE cedula = ".$id;
+       $result = $this->db->query($query);
+       while($row=$result->fetch(PDO::FETCH_ASSOC))
+       {
+        $this->cliente[] = $row;
+       }
+       return  $this->cliente;
+    }
+    public function insert($ced, $nombre, $telefono, $correo){
+        $sql="insert into cliente (cedula, nombre, telefono, correo)  values('".$ced."','".$nombre."','".$telefono."','".$correo."');";
+        $resultado=$this->db->query($sql);
+        if ($resultado) {
+            return true;
+        }else {
+            return false;
+        }
+    }
+    public function delete($id){
+        $sql="DELETE FROM cliente WHERE cedula='".$id."'";
+        $resultado=$this->db->query($sql);
+        if ($resultado) {
+            return true;
+        }else {
+            return false;
+        }
+    }
+    public function update($ced, $nombre, $correo, $telefono){
+        $sql="UPDATE cliente SET nombre= '".$nombre."', correo= '".$correo."', telefono= '".$telefono."' WHERE cedula ='".$ced."'";
+        $resultado=$this->db->query($sql);
+        if ($resultado) {
+            return true;
+        }else {
+            return false;
+        }
+    }
 }
 ?>
